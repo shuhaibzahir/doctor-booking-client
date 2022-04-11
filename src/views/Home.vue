@@ -1,18 +1,59 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+<div class="home">
+    <!-- this is for carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/image/1.jpg" class="d-block w-100 " alt="...">
+       <div class="carousel-caption d-none d-md-block">
+      <h5>Explore the world </h5>
+      <p>Dummy Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellendus in nobis! Nulla dolore rem architecto, recusandae at facere nihil esse id nemo aliquam quos minus necessitatibus unde quam culpa.</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/image/2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+      <h5>Explore the world 2 </h5>
+      <p>Dummy Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellendus in nobis! Nulla dolore rem architecto, recusandae at facere nihil esse id nemo aliquam quos minus necessitatibus unde quam culpa.</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/image/3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+      <h5>Explore the world  3</h5>
+      <p>Dummy Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellendus in nobis! Nulla dolore rem architecto, recusandae at facere nihil esse id nemo aliquam quos minus necessitatibus unde quam culpa.</p>
+  </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <doctors/>
+ 
+
+</div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Doctors from '@/components/Doctors.vue'
 
-export default defineComponent({
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-});
+ export default {
+   name:'Home',
+   components:{
+ 
+      Doctors
+   }
+ 
+ }
 </script>

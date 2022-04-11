@@ -1,0 +1,25 @@
+
+$primary-color: #42C2FF;
+$secondary-color: #85F4FF;
+$third-color:#B8FFF9;
+$lign-color:#EFFFFD;
+
+// screen width
+
+$medium: 768px;
+
+@function set-text-color($color){
+    @if (lightness($color)>70) {
+        @return #333;
+    }
+    @else{
+        @return #fff;
+    }
+}
+
+
+@mixin  setBackground-color($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+

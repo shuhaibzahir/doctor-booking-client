@@ -1,0 +1,107 @@
+@import "./config.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  .logo {
+    width: 30%;
+  }
+}
+
+.home {
+  .carousel-item {
+    max-height: 90vh;
+    position: relative;
+    background-color: #1f1f1f;
+  }
+  .carousel-item img{
+     mix-blend-mode: overlay;
+  }
+ 
+}
+
+.main-heading{
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  // background-color: red;
+ 
+  h1{
+    font-size: 2.5rem;
+  }
+  p{
+    padding: 0 20px;
+  }
+  
+}
+.image-container {
+  .login-image {
+    width: 100%;
+    margin-bottom: -88px;
+    @media screen and (min-width: $medium) {
+      margin-bottom: 0;
+    }
+  }
+  .signup-image {
+    width: 80%;
+  }
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+.form-container {
+  @media screen and (min-width: $medium) {
+    border-radius: 10px;
+  }
+  form {
+    padding: 10px;
+    width: 100%;
+    @media screen and (min-width: $medium) {
+      width: 60%;
+      padding: 0px;
+    }
+  }
+}
+
+
+.doctor-section{
+  margin: 10px;
+  @media screen and (min-width: $medium) {
+   margin:20px;
+  }
+.doctor-container{
+  position: relative;
+  display: flex;
+  justify-items: start;
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  
+  .doctor-text{
+    font-size: 12px;
+  }
+  .btn-doctor{
+    padding: 5px 18px !important;
+  }
+  &::-webkit-scrollbar{
+      display: none;
+  }
+ 
+ .card{
+   min-width: 250px;
+   margin: 0 15px;
+ }
+}
+}
