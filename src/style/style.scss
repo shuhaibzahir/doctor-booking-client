@@ -41,6 +41,15 @@ body {
   p{
     padding: 0 20px;
   }
+  .hr-line{
+    height: 2px;
+    width: 100%;
+    margin-right: 3 5px;
+    background-color: #3fa266;
+  }
+  button{
+    width: 300px;
+  }
   
 }
 .image-container {
@@ -75,11 +84,13 @@ body {
 }
 
 
-.doctor-section{
+.main-section{
   margin: 10px;
   @media screen and (min-width: $medium) {
-   margin:20px;
+   margin-top: 60px;
   }
+}
+ 
 .doctor-container{
   position: relative;
   display: flex;
@@ -104,4 +115,4 @@ body {
    margin: 0 15px;
  }
 }
-}
+ 

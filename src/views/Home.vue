@@ -40,19 +40,26 @@
   </button>
 </div>
   <doctors/>
- 
-
+  <Hospitals/>
+  <AboutSection/>
+ <div class="bg-light">
+    <Footer/>
+ </div>
 </div>
 </template>
 
 <script lang="ts">
 import Doctors from '@/components/Doctors.vue'
-
+import Hospitals from '@/components/Hospitals.vue'
+import AboutSection from "@/components/About.vue"
+import Footer from "@/components/Footer.vue"
  export default {
    name:'Home',
    components:{
- 
-      Doctors
+      Doctors,
+      Hospitals,
+      AboutSection,
+      Footer
    }
  
  }

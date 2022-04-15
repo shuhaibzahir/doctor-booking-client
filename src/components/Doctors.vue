@@ -1,6 +1,6 @@
 <template>
- <div class="doctor-section">
-   <Heading/>
+ <div class="main-section">
+   <Heading :mainHeading="'Doctors'" :subHeading="'this is most readched and successfull doctors'"/>
     <div class=" container  doctor-container">
   <div v-for="(item,ind) in doctors"  :key="ind" class="card" style="width: 18rem;">
   <img :src="item.image" class="card-img-top doctor-image" alt="">
