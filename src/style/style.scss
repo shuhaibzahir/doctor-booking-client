@@ -13,7 +13,13 @@ body {
 
 .navbar {
   .logo {
-    width: 30%;
+    width: 30%; 
+  }
+  .nav-logo-icon{
+    width: 100%;
+    @media screen and (min-width: 992px) {
+      width: auto;
+    }
   }
 }
 
@@ -21,7 +27,7 @@ body {
   .carousel-item {
     max-height: 90vh;
     position: relative;
-    background-color: #1f1f1f;
+    background-color: #044a52;
   }
   .carousel-item img{
      mix-blend-mode: overlay;
@@ -91,6 +97,7 @@ body {
   }
 }
  
+.deparment-option,
 .doctor-container{
   position: relative;
   display: flex;

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="d-flex p-5 justify-content-between align-items-center">
+    <div class="d-md-flex p-5 justify-content-between align-items-center">
       
       <div>
         <h3>Quicke</h3>
