@@ -160,28 +160,8 @@
       </div>
     </div>
 
-   
-        <div class="mt-5">
-            <div class=" deparment-option overflow-auto rounded ">
-                <ul class="d-flex bg-success department  justify-contnet-start align-items-center pr-0 py-3">
-                    <li  class="btn rounded btn-outline-light mx-2 " :class="{active:departmentSelected=='All'}" @click="selectDepartment($event,'All')" >All</li>
-                    <li  class="btn rounded btn-outline-light mx-2" :class="{active:departmentSelected=='Neurology'}"  @click="selectDepartment($event,'Neurology')" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2"  :class="{active:departmentSelected=='Neurology1'}" @click="selectDepartment($event,'Neurology1')" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" :class="{active:departmentSelected=='Neurology2'}" @click="selectDepartment($event,'Neurology2')" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" :class="{active:departmentSelected=='Neurology3'}" @click="selectDepartment($event ,'Neurology3')">Neurology</li>
-                     <li  class="btn rounded btn-outline-light mx-2" :class="{active:departmentSelected=='All'}" @click="selectDepartment" >All</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                     <li  class="btn rounded btn-outline-light mx-2" >All</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                    <li  class="btn rounded btn-outline-light mx-2" >Neurology</li>
-                </ul>
-            </div>
-        </div>
+   <!-- end top content -->
+ 
    
     <!-- this is off canvas property -->
     <div
@@ -239,18 +219,11 @@
 </template>
 
 <script>
+
+ 
 export default {
   name: "SingleHospitalDetails",
-  data(){
-      return {
-          departmentSelected:'All'
-      }
-  },
-  methods:{
-      selectDepartment(e,name){
-          this.departmentSelected= name
-      }
-  }
+ 
 };
 </script>
 
