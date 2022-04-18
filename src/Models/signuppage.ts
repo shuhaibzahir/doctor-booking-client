@@ -1,3 +1,4 @@
 export declare interface signuppageData{
-    signupCheck: string
+    signupCheck?: string,
+    getOtop?: boolean,
 }

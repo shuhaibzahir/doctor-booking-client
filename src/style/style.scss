@@ -60,19 +60,23 @@ body {
 }
 .image-container {
   .login-image {
-    width: 100%;
+    width: 50%;
     margin-bottom: -88px;
     @media screen and (min-width: $medium) {
       margin-bottom: 0;
     }
   }
   .signup-image {
-    width: 80%;
+    width: 70%;
   }
 }
 
 .min-height {
   min-height: 100vh;
+}
+
+.min-height-90{
+  min-height: 90vh;
 }
 
 .form-container {
