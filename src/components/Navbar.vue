@@ -38,7 +38,7 @@
       </div>
        <div class="d-flex  mx-md-2 p-3 p-md-0 justify-content-around">
         <router-link to="/login"><button class="btn btn-outline-dark btn-sm rounded-0" type="submit"><i class="fa-solid fa-user-plus"></i> Login</button></router-link>
-        <router-link to="/signup"><button class="btn btn-dark  btn-sm  rounded-0" type="submit"><i class="fa-solid fa-house-medical-flag"></i> Login</button></router-link>
+        <router-link to="/hospital/login"><button class="btn btn-dark  btn-sm  rounded-0" type="submit"><i class="fa-solid fa-house-medical-flag"></i> Login</button></router-link>
       </div>
     </div>
   </div>

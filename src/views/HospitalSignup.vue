@@ -1,16 +1,18 @@
 <template>
   <div class="container-fluid">
-    <div class="row align-items-center  justify-content-center min-height bg-light p-md-5 p-2">
-      <div class="col-md-6 image-container col-12">
+    <div class="row align-items-center  justify-content-center  min-height-90 bg-light    p-2">
+      <div class="col-md-4 image-container col-12">
         <img
           class="rounded signup-image"
-          src="../assets/image/signup.svg"
-          alt="Login"
+          src="../assets/image/hospital.svg"
+          alt="hsospital login"
         />
       </div>
-      <div class="col-md-4 col-12 form-container p-md-5 p-2 shadow d-flex justify-content-center">
-        <form >
-          <div class="mb-3">
+      <div class="col-md-6 col-12 form-container p-2  shadow ">
+        <form class=" p-md-3 w-100">
+         <div class="d-md-flex align-items-center justify-content-evenly">
+            <div>
+             <div class="mb-3">
             <label for="username" class="form-label"
               >User name</label
             >
@@ -45,7 +47,7 @@
             />
             
           </div>
-          <div class="mb-3">
+             <div class="mb-3">
             <label for="password" class="form-label"
               >Password</label
             >
@@ -55,6 +57,29 @@
               id="userPassword"
             />
           </div>
+          </div>
+          <div>
+              <div class="mb-3">
+            <label for="reg" class="form-label"
+              >Registration Number</label
+            >
+            <input
+              type="text"
+              max="10"
+              min="10"
+              class="form-control"
+              id="reg"
+            />
+            
+          </div>
+             <div class="mb-3">
+            <label for="reg" class="form-label"
+              >Address</label
+            >
+            <textarea name="address" class="form-control" id="address" cols="10" rows="5"></textarea>
+            
+          </div>
+       
            <div class="mb-3">
             <label for="confirmpassowrd" class="form-label"
               >Confirm Password</label
@@ -65,8 +90,13 @@
               id="confirmpassowrd"
             />
           </div>
+          </div>
+         </div>
        
-          <button type="submit" class="btn btn-primary">Submit</button>
+         <div class="d-flex justify-content-around">
+            <button type="submit" class="btn btn-success">Submit</button>
+             <router-link to="/hospital/login"><a  class="btn btn-outline-primary">Login</a></router-link>
+         </div>
         </form>
       </div>
     </div>

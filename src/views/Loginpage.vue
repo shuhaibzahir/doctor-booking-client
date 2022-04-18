@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="d-flex flex-column flex-md-row align-items-center justify-content-center   min-height-90 bg-light p-md-5 p-2">
-      <div class="image-container  ">
+      <div class="image-container d-none d-md-block ">
         <img
           class="rounded login-image "
           src="../assets/image/login.svg"

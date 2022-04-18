@@ -20,10 +20,7 @@
        <!-- card item -->
             
            <DoctorBooking v-for=" (item,index) of filterdDetails" :key="index" :details="item" />
-          
-
-        
-        
+ 
      </div>
    <!-- doctors end -->
         

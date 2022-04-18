@@ -20,9 +20,30 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/Loginpage.vue')
   },
   {
+    path: '/hospital/login',
+    name: 'hospital-login',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/HospitalLogin.vue')
+  },
+  {
+    path: '/hospital/register',
+    name: 'hospital-signup',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/HospitalSignup.vue')
+  },
+  {
     path: '/hospital/:id',
     name: 'hospital',
     component: () => import('../views/Hospital.vue')
+  },
+  {
+    path: '/doctor/:id',
+    name: 'hospital',
+    component: () => import('../views/Doctorview.vue')
   },
 ]
 
