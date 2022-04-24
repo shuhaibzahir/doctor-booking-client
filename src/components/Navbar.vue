@@ -36,10 +36,8 @@
         <input class="form-control rounded-0" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-secondary rounded-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
-       <div class="d-flex  mx-md-2 p-3 p-md-0 justify-content-around">
-        <router-link to="/login"><button class="btn btn-outline-dark btn-sm rounded-0" type="submit"><i class="fa-solid fa-user-plus"></i> Login</button></router-link>
-        <router-link to="/hospital/login"><button class="btn btn-dark  btn-sm  rounded-0" type="submit"><i class="fa-solid fa-house-medical-flag"></i> Login</button></router-link>
-      </div>
+     <router-link to="/login"><button class="btn btn-outline-dark btn-sm rounded-0"><i class="fa-solid fa-user-plus"></i> Login</button></router-link>
+
     </div>
   </div>
 </nav>
@@ -50,6 +48,7 @@ export default {
   name:'navbar',
   data(){
     return {
+      hospitalUrl:'',
       doctorCategory:[
         {id:1, name:'Cardiologists'},
         {id:2, name:'Anesthesiologists'},
@@ -65,7 +64,8 @@ export default {
         {id:5, name:'Clinics for Family Planning and Abortion.'},
       ],
     }
-  }
+  },
+ 
 }
 </script>
 

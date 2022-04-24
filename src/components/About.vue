@@ -1,5 +1,5 @@
 <template>
-  <section class="page-section   text-white" id="about">
+  <section class="page-section text-white" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>

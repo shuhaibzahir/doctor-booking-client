@@ -39,27 +39,33 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+  <div class="main-section">
+  <Heading :mainHeading="'Doctors'" :subHeading="'this is most readched and successfull doctors'"/>
   <doctors/>
+  </div>
+   <div class="main-section">
+  <Heading :mainHeading="'Hospital'" :subHeading="'this is most readched and successfull doctors'"/>
   <Hospitals/>
-  <AboutSection/>
- <div class="bg-light">
-    <Footer/>
- </div>
+  </div>
+   <div class="main-section">
+     <AboutSection/>
+   </div>
+
 </div>
 </template>
 
-<script lang="ts">
+<script>
 import Doctors from '@/components/Doctors.vue'
 import Hospitals from '@/components/Hospitals.vue'
 import AboutSection from "@/components/About.vue"
-import Footer from "@/components/Footer.vue"
+import Heading from "@/components/Heading.vue"
  export default {
    name:'Home',
    components:{
       Doctors,
       Hospitals,
       AboutSection,
-      Footer
+      Heading
    }
  
  }

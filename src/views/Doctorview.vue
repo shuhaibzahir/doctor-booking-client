@@ -66,11 +66,11 @@
               </div>
             </div>
           </div>
-           <div class="d-flex align-items-center mt-4">
+           <div class="d-flex align-items-center mt-4 mb-5">
               <input type="date" v-model="selectedDate" class="form-control  ">
               <button class="btn btn-dark mx-3" @click="checkAvailableDate">Check</button>
             </div>
-            <div class="p-md-3 p-1 mb-4 my-md-0 bg-light" v-if="checkedDate">
+            <div class="p-md-3 p-1 bg-light mb-4 my-md-0 " v-if="checkedDate">
               <h6 class=" mb-3">Optime</h6>
               <div class="d-flex flex-wrap ">
                 <div v-for="(time,index) of doctorDetails.optime.time" :key="index" class="d-flex align-items-center mt-1">
@@ -79,20 +79,29 @@
                 </div>
               </div>
             </div>
-            <div v-else class="bg-light p-5">
+            <div v-else class="bg-light p-5 mt-4">
                 <span>please select time</span>
             </div>
         </div>
         </div>
          
-  
-      </div>
+     </div>
+     <div class="bg-dark py-4">
+       <Heading :mainHeading="'Doctors'" class="text-white" :subHeading="'this is most readched and successfull doctors'"/>
+       <Doctor />
+     </div>
   </div>
 </template>
 
 <script>
+import Doctor from "../components/Doctors.vue"
+import Heading from "../components/Heading.vue"
 export default {
     name:'Doctorview',
+    components:{
+      Doctor,
+      Heading
+    },
     data(){
         return{
             doctorDetails: {

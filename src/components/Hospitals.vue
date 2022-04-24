@@ -1,9 +1,5 @@
 <template>
-  <div class="main-section pt-5">
-    <Heading
-      :mainHeading="'TOP Hospitals'"
-      :subHeading="'No.1 hospitals in the world'"
-    /> 
+  <div class=" pt-5">
       <!-- item start -->
       <div class="row p-5 d-flex justify-content-center">
         <div class="cards">
@@ -41,12 +37,10 @@
 </template>
 
 <script>
-import Heading from "@/components/Heading.vue";
+
 export default {
   name: "Hostpitals",
-  components: {
-    Heading,
-  },
+ 
   data() {
     return {
       hospitals: [

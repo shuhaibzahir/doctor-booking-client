@@ -19,22 +19,7 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import('../views/Loginpage.vue')
   },
-  {
-    path: '/hospital/login',
-    name: 'hospital-login',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import('../views/HospitalLogin.vue')
-  },
-  {
-    path: '/hospital/register',
-    name: 'hospital-signup',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import('../views/HospitalSignup.vue')
-  },
+ 
   {
     path: '/hospital/:id',
     name: 'hospital',
@@ -42,14 +27,18 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/doctor/:id',
-    name: 'hospital',
+    name: 'doctor',
     component: () => import('../views/Doctorview.vue')
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior() {
+    // always scroll to top
+    return { top: 0 , behavior:'smooth'}
+  },
 })
 
 export default router
